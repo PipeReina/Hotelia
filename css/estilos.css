@@ -673,3 +673,71 @@ div .cambio{
   width: 300px;
   margin: 5px 0 105px 0;
 }
+
+/* h */
+.modal-contenido{
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    padding: 10px 20px;
+    margin: 20% auto;
+    position: relative;
+    border-radius: 3px;
+}
+
+.terminosacept{
+    width: 100px;
+    height: 40px;
+    margin: 10px 150px;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Marcellus', serif;
+    background: #000;
+    font-weight: lighter;
+    color:  #fff;
+    font-size: 18px;
+    padding: 6px 16px;
+    display: block;
+    width: 105px;
+    margin: 0px auto;
+     
+}
+
+.termiyserv{
+    text-decoration: none;
+    color: #000000;
+}
+
+.regreso{
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+    color: #ffffff;
+}
+  
+.modal{
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.596);
+    align-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+}
+
+#miModal:target{
+    opacity:2;
+    pointer-events:auto;
+}
+
+.termiyserv{
+    text-decoration: none;
+    color: #000000;
+}
+.salirt{
+    text-decoration: none;
+    font-family: 'Marcellus', serif;
+    color: #000000;
+}
