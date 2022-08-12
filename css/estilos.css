@@ -24,9 +24,11 @@ body{
   h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }
+
+/* .........grande......... */
 /*responsive*/
 
-@media screen and (min-width: 381px){
+@media screen and (min-width: 942px){
 
   .logo i{
     display: none;
@@ -58,7 +60,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--negro);
+    background-color: var(--negro2);
     font-family: 'Marcellus', serif;
     font-size: 1.3em;
     padding: 1rem;
@@ -107,24 +109,28 @@ body{
     margin-right: 150px;
   }
   
-  #features{
+#features{
     background: url(../img/bg-features.png);
+    background-repeat: no-repeat;
     color: white;
     padding-top: 1rem;
-  }
-  
-  .features-title{
+    height: 100%;
+    justify-content: space-around;
+}
+
+.features-title{
     background-color: rgba(0,0,0,0.35);
     text-align: center;
     padding: 0.5rem;
     font-size: 1.5em;
-  }
-  .features-description{
+}
+
+.features-description{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-  .feature{
+}
+.feature{
     width: 25%;
     min-width: 180px;
     max-width: 230px;
@@ -135,19 +141,17 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-  }
-  
-  .feature i{
+}
+.feature i{
     font-size: 2.2em;
     margin-bottom: 1.5rem;
-  }
-  .feature-blue{
+}
+.feature-blue{
     background-color: #00325eae;
-  }
-  
-  .feature-black{
+}
+.feature-black{
     background-color: rgba(0,0,0,0.59);
-  }
+}
   .direc{
     height: 100%;
     width: 98.5%;
@@ -184,7 +188,8 @@ body{
   .perso{
     height: 200px;
     width: 290px;
-    background: linear-gradient(to right, rgba(51,122,183,255), rgba(58,68,138,255));
+    background-image: url(../img/tarjetaLogin.jpeg);
+    background-size: cover;
     margin: 0 40px 0 40px;
     padding: 0 15px 0 15px
   }
@@ -255,85 +260,90 @@ body{
     height:30px;
     width:70px ;
   }
-  
   footer{
-    height: 230px;
-    margin-top: 250px;
+    height: 200px;
     background-color: rgba(22,23,25,255);
-  }
-  .lom2{
-    height: 50px;
-    width: 320px;
-    margin: 50px 0 80px 100px;
-    padding: 50px;
-    color: white;
-    font-size: 18px;
-  }
-  .redes{
-    height: 30px;
-    width: 200px;
-    margin: -70px 0 0 170px;
-  }
-  .facebook{
-    height: 30px;
-    width: 200px;
     display: flex;
     justify-content: space-between;
+    margin-top: 23%;
+    padding: 2%;
   }
-  .contac{
-    height: 120px;
-    width: 400px;
-    margin: -140px 0 0 400px;
-  }
-  .direcc{
-    height: 50px;
-    width: 320px;
-    margin: -36px 0 0 50px;
-    color: white;
-  }
+    .lom2{
+      height: 50px;
+      width:350px;
+      color: white;
+      font-size: 18px;
+    }
+    .redes{
+      height: 30px;
+      width: 200px;
+      margin-top: 10%;
+    }
+    .facebook{
+      height: 30px;
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
   
-  .direcc2{
-    height: 50px;
-    width: 320px;
-    margin: -28px 0 0 50px;
-    color: white;
-  }
-  
-  .publicidades{
-    height: 50px;
-    width: 320px;
-    margin:-120px 0 0 850px;
-    text-align: center;
-    color: white;
-  }
-  .poli1{
-    height: 50px;
-    width: 320px;
-  }
-  
+    }
+    .contac{
+      height: 120px;
+      width: 400px;
+    }
+    .direcc{
+      height: 50px;
+      width: 320px;
+      color: white;
+    }
+    
+    .direcc2{
+      height: 50px;
+      width: 320px;
+      color: white;
+    }
+    
+    .publicidades{
+      height: 50px;
+      width: 320px;
+      text-align: center;
+      color: white;
+    }
+    .poli1{
+      height: 50px;
+      width: 320px;
+    }
+    
+/* login grande  */
+
   .bodylogin{
     height: 614px;
-    width: 1366px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+
   }
+  ::-webkit-scrollbar {
+    display: none;
+}
   .fondologin{
-    height: 613px;
-    width: 1366px;
-    position: relative;
-  
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
   .login{
      height: 383px;
     width: 366px;
     background-color: rgba(85,136,181,0.8);
     position: absolute;
-    margin: -490px 0 0 36.5%;
     border-radius: 5px;
   
   }
   .blanco{
       height: 133px;
     width: 366px;
-    background-image: url(../img/loginblanco.png);
+    background-image: url(../img/loginblanco1.png);
     background-size: cover;
     border-radius: 5px;
   
@@ -382,132 +392,218 @@ body{
     color: #000;
     text-decoration: none;
   }
-  
-  .tituloRegis{
-    width: 366px;
-    height: 620px;
-    background: linear-gradient(to right, rgba(62,125,179,0.9), rgba(19,64,101,0.9));
-    position: absolute;
-    margin: -620px 0 0 0;
-    border-radius: 5px;
-  }
-  
-  .logoRegis{
-    width: 306px;
-    height: 220px;
-    margin:190px 0 0 0;
-    display: flex;
-    flex-direction: row;
-    padding: 0 0 0 60px;
-    position: relative;
-  }
-  
-  .logoRegis img {
-    width: 96px;
-    height: 80px;
-  }
-  
-  .logoRegis h1 {
-    color: white;
-    margin: 10px 0 0 5px;
-    font-size: 50px;
-    font-weight: 100;
-  }
-  
-  .bienRegis{
-    position:absolute;
-    margin: -110px 0 0 90px;
-    text-align: center;
-    color: white;
-    font-weight: 100;
-  
-  }
-  
-  .FormuRegis{
-    width: 900px;
-    height: 580px;
-    background-color: rgba(255, 255, 255, 0.87);
-    position:absolute;
-    margin: -600px 0 0 420px;
-  }
-  
-  .FormuRegis h1 {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 50px;
-    font-weight: 100;
-  
-  }
-  
-  
-  .fila1Regis{
-    width: 350px;
-    height: 400px;
-    margin: 0px 0 0 0 ;
-    padding: 0 0 0 100px;
-  }
-  
-  .fila1Regis .espacio {
-    height: 23px;
-    width: 300px;
-    margin: 3px 0 10px 0;
-  }
-  
-  .fila1Regis .espacio1 {
-    height: 25px;
-    width: 305px;
-    margin: 3px 0 10px 0;
-  }
-  
-  .fila1Regis .espacio2 {
-    height: 27px;
-    width: 308px;
-    margin: 3px 0 10px 0;
-  }
-  
-  .fila2Regis{
-    width: 305px;
-    height: 400px;
-    margin: -400px 0 0 450px ;
-    padding: 0 100px 0 45px;
-  
-  }
-  
-  .fila2Regis .espacio {
-    height: 23px;
-    width: 300px;
-    margin: 3px 0 10px 0;
-  }
-  
-  .fila2Regis .espacio1 {
-    height: 25px;
-    width: 305px;
-    margin: 3px 0 10px 0;
-  }
-  
-  .fila2Regis .espacio2 {
-    height: 27px;
-    width: 308px;
-    margin: 3px 0 10px 0;
-  }
-  .fila2Regis .genero {
-    margin: 3px 0 0px 0;
-  }
-  
-  .abajoRegis{
-    text-align: center;
-  }
-  .abajoRegis button{
-    background-color: rgba(34,34,34,255);
-    color: white;
-    height: 30px;
-    width: 150px;
-    border: 0px;
-    font-size: 18px;
-    font-weight: 100;
-  
-  }
-  
+  /* Registro grande */
+.bodyRegistro{
+  height: 620px;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url(../img/fondoRegistro.png);
+  background-size: cover;
+
+}
+::-webkit-scrollbar {
+  display: none;
+} 
+.fondoRegistro{
+  height: 100%;
+  width: 100%;
+}
+.tituloRegis{
+  width: 366px;
+  height: 620px;
+  background: linear-gradient(to right, rgba(62,125,179,0.9), rgba(19,64,101,0.9));
+  border-radius: 5px;
+  margin-right: 3.5%;
+}
+
+.logoRegis{
+  width: 306px;
+  height: 220px;
+  margin:190px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 0 60px;
+  position: relative;
+}
+
+.logoRegis img {
+  width: 96px;
+  height: 80px;
+}
+
+.logoRegis h1 {
+  color: white;
+  margin: 10px 0 0 5px;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+.bienRegis{
+  position:absolute;
+  margin: -110px 0 0 90px;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+
+}
+
+.FormuRegis{
+  width: 100%;
+  height: 580px;
+  background-color: rgba(255, 255, 255, 0.87);
+  margin-right: 3.5%;
+
+}
+
+.FormuRegis h1 {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 50px;
+  font-weight: 100;
+
+}
+
+.regisFilas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.fila1Regis{
+  width: 50%;
+  height: 400px;
+  padding-left: 50px;
+
+}
+
+.fila1Regis .espacio {
+  height: 23px;
+  width: 80%;
+  margin: 3px 0 10px 0;
+  border: 0.5px solid rgb(211, 211, 211);
+  box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
+}
+
+.fila1Regis .espacio1 {
+  height: 25px;
+  width: 81%;
+  margin: 3px 0 10px 0;
+  border: 0.5px solid rgb(211, 211, 211);
+  box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
+}
+
+.fila1Regis .espacio2 {
+  height: 27px;
+  width: 83%;
+  margin: 3px 0 10px 0;
+  border: 0.5px solid rgb(211, 211, 211);
+  box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
+}
+
+.fila2Regis{
+  width: 50%;
+  height: 400px;
+
+}
+
+.fila2Regis .espacio {
+  height: 23px;
+  width: 80%;
+  margin: 3px 0 10px 0;
+  border: 0.5px solid rgb(211, 211, 211);
+  box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
+}
+
+.fila2Regis .espacio1 {
+  height: 25px;
+  width: 81%;
+  margin: 3px 0 10px 0;
+  border: 0.5px solid rgb(211, 211, 211);
+  box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
+}
+
+.fila2Regis .espacio2 {
+  height: 27px;
+  width: 83%;
+  margin: 3px 0 10px 0;
+  border: 0.5px solid rgb(211, 211, 211);
+  box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
+}
+.fila2Regis .genero {
+  margin: 3px 0 0px 0;
+}
+
+.abajoRegis{
+  text-align: center;
+}
+.abajoRegis button{
+  background-color: rgba(34,34,34,255);
+  color: white;
+  height: 30px;
+  width: 150px;
+  border: 0px;
+  font-size: 18px;
+  font-weight: 100;
+
+}
+.modalArriba{
+  background: linear-gradient(to right, rgba(75, 154, 223, 0.97), rgba(5, 23, 37, 0.9));
+  height: 70px;
+  width: 100%;
+  color: white;
+  padding-top: 30px;
+}
+
+.modalArriba h2{
+  font-weight: 100;
+}
+.pe{
+padding: 20px;  
+text-align: left;
+}
+.modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 5% auto;
+  background: #fff;
+  height: 500px;
+}
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  text-align: center;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.close:hover { background: #00d9ff; }
+.aceptar a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* .........dashboar....... */
+
   .dashboar .body {
     height: 613px;
     width: 1116px;
@@ -773,8 +869,8 @@ body{
   }
   
 }
-
-@media screen and (max-width: 380px){
+/* .........chiquito............ */
+@media screen and (max-width: 942px){
   .logo{
     background-color: var(--negro2);
     display: flex;
@@ -834,7 +930,7 @@ nav a:hover{
   width: 96%;
   background-color: rgb(0, 0, 0,0.5);
   background: linear-gradient(to right, rgb(0, 0, 0,0.7), rgba(21, 21, 21, 0));
-  margin-top: -80px;
+  margin-top: -140px;
   position: absolute;
   padding-left: 50px;
   padding-top: 15px;
@@ -932,14 +1028,15 @@ nav a:hover{
   display: flex;
   flex-direction: column;
   margin-left: -4px;
-  justify-content: center;
+  align-items: center;
 }
 .perso {
-  height: 40%;
-  width: 80%;
-  background: linear-gradient(to right, rgba(51,122,183,255), rgba(58,68,138,255));
-  margin: 0px 20px 20px 20px;
+  height: 200px;
+  width: 290px;
+  background-image: url(../img/tarjetaLogin.jpeg);
+  background-size: cover;
   padding: 0 15px 0 15px;
+  margin-bottom: 15px;
 }
 .lo{
   font-size: 14px;
@@ -1007,61 +1104,608 @@ input[type="radio"]:checked ~ label {
   height:30px;
   width:70px ;
 }
-footer {
-  height: 730px;
-  margin-top: 160%;
+footer{
+  height: 600px;
   background-color: rgba(22,23,25,255);
+  display: flex;
+  justify-content: space-around;
+  padding: 0 7% 0 7%;
+  margin-top: 600px;
+  flex-direction: column;
+  align-items: center;
 }
-.lom2{
-  height: 50px;
-  width: 320px;
-  margin: 30px 0 80px 0px;
-  padding: 30px;
-  color: white;
-  font-size: 18px;
+  .lom2{
+    height: 100px;
+    width:100%;
+    color: white;
+    font-size: 18px;
+    border-bottom:1px solid rgba(220, 220, 220, 0.849);
+  }
+  .redes{
+    height: 30px;
+    width: 200px;
+    margin-top: 10%;
+  }
+  .facebook{
+    height: 30px;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 350px;
+  }
+  .contac{
+    height: 120px;
+    width: 100%;
+    margin-top: -150px;
+    border-bottom:1px solid rgba(220, 220, 220, 0.849);
+
+  }
+
+  .contacArriba{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+  }
+
+  .contacAbajo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .direcc{
+    height: 50px;
+    width: 350px;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .direcc2{
+    height: 50px;
+    width: auto;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+
+  }
+  
+  .publicidades{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -150px;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.849);
+  }
+  .poli1{
+    height: 50px;
+    width: 320px;
+  }
+/* login chiquito */
+  .bodylogin{
+    height: 800px;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  ::-webkit-scrollbar {
+    display: none;
 }
-.redes{
+  .fondologin{
+    height: 100%;
+    width: auto;
+  }
+  .login{
+     height: 383px;
+    width: 366px;
+    background-color: rgba(85,136,181,0.8);
+    position: absolute;
+    border-radius: 5px;
+  
+  }
+  .blanco{
+      height: 133px;
+    width: 366px;
+    background-image: url(../img/loginblanco1.png);
+    background-size: cover;
+    border-radius: 5px;
+  
+  }
+  
+  .usulogin{
+    height: 70px;
+    width: 70px;
+    background-image: url(../img/usuariomorado.png);
+    background-size: cover;
+    margin: -40px 0 0 145px ;
+  
+  }
+  
+  .loginmedio{
+    color: white;
+    padding: 0 60px 0 60px;
+  }
+  
+  div .loginmedio input{
+    width: 230px;
+    height: 20px;
+  }
+  
+  .loginabajo{
+    height: 75px;
+    width: 306px;
+    padding: 30px 0 0 60px;
+  }
+  .loginabajo button{
+    color: white;
+    background-color: #000;
+    width: 240px;
+    height: 30px;
+    border-radius: 4px;
+  }
+  
+  .loginabajo p {
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+  
+  .loginabajo a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  /* Registro chiquito */
+  .bodyRegistro{
+    height:1450px;
+    max-height: 100%;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/fondoRegistro1.jpg);
+    background-size: cover;
+
+  }
+  ::-webkit-scrollbar {
+    display: none;
+} 
+  .fondoRegistro{
+    height: 100%;
+    width: 100%;
+  }
+  .tituloRegis{
+    width: 100%;
+    height: 30%;
+    margin: 25px 0 25px 0;
+    background: linear-gradient(to right, rgba(62,125,179,0.9), rgba(19,64,101,0.9));
+    border-radius: 5px;
+    position: absolute;
+  }
+  
+  .logoRegis{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .logoRegis img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .logoRegis h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+  }
+  
+  .bienRegis{
+    text-align: center;
+    color: white;
+    font-weight: 100;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  
+  .FormuRegis{
+    width: 80%;
+    height: 1030px;
+    background-color: rgba(255, 255, 255, 0.87);
+    position: absolute;
+    margin-top: 240px;
+    padding: 5%;
+    border-radius: 10px;
+  }
+  
+  .FormuRegis h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 50px;
+    font-weight: 100;
+  }
+  
+  
+
+  
+.fila1Regis .espacio {
+  height: 25px;
+  width: 98%;
+  margin: 3px 5% 10px 0;
+  border: 0.5px solid rgb(211, 211, 211);
+  box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
+  
+}
+
+form{
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.fila1Regis .espacio1 {
+  height: 25px;
+  width: 99%;
+  margin: 3px 0 10px 0;
+  border: 0.5px solid rgb(211, 211, 211);
+  box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
+}
+
+.fila1Regis .espacio2 {
   height: 30px;
-  width: 200px;
-  margin: -70px 0 0 170px;
+  width: 100%;
+  margin: 3px 0 10px 0;
+  border: 0.5px solid rgb(211, 211, 211);
+  box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
 }
-.facebook{
-  height: 30px;
-  width: 200px;
+ 
+
+  
+  .fila2Regis .espacio {
+    height: 25px;
+    width: 98%;
+    margin: 3px 5% 10px 0;
+    border: 0.5px solid rgb(211, 211, 211);
+    box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
+    
+  }
+
+  
+  .fila2Regis .espacio1 {
+    height: 25px;
+    width: 99%;
+    margin: 3px 0 10px 0;
+    border: 0.5px solid rgb(211, 211, 211);
+    box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
+  }
+  
+  .fila2Regis .espacio2 {
+    height: 30px;
+    width: 100%;
+    margin: 3px 0 10px 0;
+    border: 0.5px solid rgb(211, 211, 211);
+    box-shadow:0 1px 3px rgba(152, 152, 152, 0.905);
+  }
+  .modalArriba{
+    background: linear-gradient(to right, rgba(75, 154, 223, 0.97), rgba(5, 23, 37, 0.9));
+    height: 70px;
+    width: 100%;
+    color: white;
+    padding-top: 30px;
+  }
+
+  .modalArriba h2{
+    font-weight: 100;
+  }
+  .pe{
+  padding: 20px;  
+  text-align: left;
+}
+
+.aceptar a {
+  text-decoration: none;
+  color: #000;
+}
+  .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  .modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    background: #fff;
+    height: 500px;
+  }
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    text-align: center;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .close:hover { background: #00d9ff; }
+  .abajoRegis{
+    text-align: center;
+  }
+
+  .aceptar{
+    margin-top: 20px;
+  }
+  .abajoRegis button{
+    background-color: rgba(34,34,34,255);
+    color: white;
+    height: 30px;
+    width: 150px;
+    border: 0px;
+    font-size: 18px;
+    font-weight: 100;  
+    margin-top: -30px;
+  }
+  
+}
+
+/* ........muy grande ........ */
+
+@media screen and (min-width: 1392px){
+
+  .img2{
+    height: 10%;
+    width: 13%;
+    float: right;
+    margin-top: -320px;
+    margin-right: 15%;
+  }
+  
+.mapa{
+  height: 400px;
+  width: 97%;
+}
+footer{
+  height: 200px;
+  background-color: rgba(22,23,25,255);
   display: flex;
   justify-content: space-between;
+  margin-top: 14%;
+  padding: 2%;
 }
-.contac{
-  height: 120px;
-  width: 400px;
-  margin: -140px 0 0 400px;
+  .lom2{
+    height: 50px;
+    width:350px;
+    color: white;
+    font-size: 18px;
+  }
+  .redes{
+    height: 30px;
+    width: 200px;
+    margin-top: 10%;
+  }
+  .facebook{
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .contac{
+    height: 120px;
+    width: 400px;
+  }
+  .direcc{
+    height: 50px;
+    width: 320px;
+    color: white;
+  }
+  
+  .direcc2{
+    height: 50px;
+    width: 320px;
+    color: white;
+  }
+  
+  .publicidades{
+    height: 50px;
+    width: 320px;
+    text-align: center;
+    color: white;
+  }
+  .poli1{
+    height: 50px;
+    width: 320px;
+  }
+  /* login muy grande*/
+
+  .bodylogin{
+    height: 800px;
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  ::-webkit-scrollbar {
+    display: none;
 }
-.direcc{
-  height: 50px;
-  width: 320px;
-  margin: -36px 0 0 50px;
-  color: white;
+  .fondologin{
+    height: 120%;
+    width: 100%;
+  }
+  .login{
+     height: 383px;
+    width: 366px;
+    background-color: rgba(85,136,181,0.8);
+    position: absolute;
+    border-radius: 5px;
+  }
+  .blanco{
+      height: 133px;
+    width: 366px;
+    background-image: url(../img/loginblanco1.png);
+    background-size: cover;
+    border-radius: 5px;
+  
+  }
+  
+  .usulogin{
+    height: 70px;
+    width: 70px;
+    background-image: url(../img/usuariomorado.png);
+    background-size: cover;
+    margin: -40px 0 0 145px ;
+  
+  }
+  
+  .loginmedio{
+    color: white;
+    padding: 0 60px 0 60px;
+  }
+  
+  div .loginmedio input{
+    width: 230px;
+    height: 20px;
+  }
+  
+  .loginabajo{
+    height: 75px;
+    width: 306px;
+    padding: 30px 0 0 60px;
+  }
+  .loginabajo button{
+    color: white;
+    background-color: #000;
+    width: 240px;
+    height: 30px;
+    border-radius: 4px;
+  }
+  
+  .loginabajo p {
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 8px;
+  }
+  
+  .loginabajo a {
+    color: #000;
+    text-decoration: none;
+  }
 }
 
-.direcc2{
-  height: 50px;
-  width: 320px;
-  margin: -28px 0 0 50px;
-  color: white;
+/* @media screen and (min-width: 441px){
+  footer{
+
+    margin-top: 180%;
+
+  }
 }
 
-.publicidades{
-  height: 50px;
-  width: 320px;
-  margin:-120px 0 0 850px;
-  text-align: center;
-  color: white;
-}
-.poli1{
-  height: 50px;
-  width: 320px;
-}
+  @media screen and (min-width: 508px){
+    footer{
+  
+      margin-top: 160%;
+  
+    }
+  }
+    @media screen and (min-width: 677px){
+      footer{
+    
+        margin-top: 120%;
+    
+      }
 
+    }
+      @media screen and (min-width: 858px){
+        footer{
+      
+          margin-top: 100%;
+          
+      
+        }
+
+      }
+        @media screen and (min-width: 942px){
+          footer{
+        
+            margin-top: 30%;
+        
+          }}
+          @media screen and (min-width: 1016px){
+            footer{
+          
+              margin-top: 17%;
+          
+            }
+} */
+         
+/* 
+@media screen and (max-width: 777px){
+  
+  .login{
+
+   margin: -490px 0 0 25.5%;
+ 
+ }
+ @media screen and (max-width: 592px){
+  .login{
+
+    margin: -490px 0 0 12.5%;
+  
+  }
+ }
+ @media screen and (max-width: 475px){
+  .login{
+    height: 383px;
+   width: 300px;
+   margin: -490px 0 0 8.5%;
+ 
+ }
+ .blanco{
+  width: 300px;
+ }
+ .usulogin {
+  
+  margin: -40px 0 0 120px;
 }
+.loginmedio {
+  padding: 0 60px 0 30px;
+}
+.loginabajo {
+
+  padding: 30px 0 0 30px;
+}
+ } } */
+
 
 

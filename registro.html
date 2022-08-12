@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="https://kit.fontawesome.com/6131ecdde6.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/hotelia campana.svg">
     <title>Taller 0 Maquetación Responsive</title>
 </head>
 <body>
-   <div class="bodylogin">
-    <img src="img/fondoRegistro.png" class="fondologin">
+   <div class="bodyRegistro">
     <div class="tituloRegis">
     <div class="logoRegis"> <img src="img/hotelia campana.svg"><h1>otelia</h1></div>
-    <div class="bienRegis"><h1>Eres mas que <br>bienvenido</h1></div>
+    <div class="bienRegis"><h1>Eres mas que </h1><h1 class="h1a">&nbspbienvenido</h1></div>
    </div>
     <div class="FormuRegis"><h1>Regístrate</h1>
-        <div class="fila1Regis"><br>
-            <from >Tipo de documento<br>
+        <div class="regisFilas">
+            <div class="fila1Regis"><br>
+            <form >Tipo de documento<br>
                 <select  class="espacio2">
                 <option>Escoja una opcion</option>
                 <option>C.C.</option>
@@ -24,7 +25,7 @@
                 <option>P.P.</option>
                 <option>Otro</option>
                 </select>
-            </from>
+            </form>
             <form> Nombres<br>
                 <input type="text" class="espacio"><br>
             </form>
@@ -34,7 +35,7 @@
             <form>Email <br>
                 <input type="email" class="espacio">
             </form>
-            <from >País de origen<br>
+            <form >País de origen<br>
                 <select  class="espacio2">
                         <option> </option>
                         <option>	BELGICA	</option>
@@ -274,12 +275,12 @@
                         <option>	WALLIS Y FORTUNA	</option>
                         <option>	SAMOA AMERICANA	</option>                        
                 </select>
-            </from><br>
-            <from>Contraseña:<br>
+            </form>
+            <form>Contraseña:<br>
                 <input type="password"  class="espacio">
             </form>
-        </div>
-        <div class="fila2Regis"><br>
+            </div>
+            <div class="fila2Regis"><br>
             <form> Número de documento<br>
                 <input type="text" class="espacio"><br>
             </form>
@@ -294,42 +295,33 @@
             <form>Teléfono de contacto<br>
                 <input type="text" class="espacio">
             </form>
-            <from >Foto<br>
+            <form >Foto<br>
                 <input type="file" class="espacio3"><br>
             </from><br>
-            <from>Confirmar contraseña:<br>
+            <form>Confirmar contraseña:<br>
                 <input type="password"  class="espacio">
             </form>
+            </div>
         </div>
         <div class="abajoRegis">
-            <div class="">
-                <input type="checkbox">Acepto
-                <a class="termiyserv" href="#miModal">terminos y condiciones</a>
-                    <div id="miModal" class="modal">
-                       <div class="modal-contenido">
-                            <h2>Terminos y Condiciones</h2>
-                             <br>
-                             <p>Estos Terminos del Servicio reflejan la forma de trabajar
-                             de Google como empresa, las leyes por las que nos rejimos
-                             y determinamos aspectos que siempre hemos creido que son
-                            ciertos. Por ello, estos Terminos del Sericio ayudan a definir
-                            la relacion que tiene Google contigo cuando interactuas con nuestros
-                            servicios. Por ejemplo, estos terminos incluyen las siguientes
-                            secciones: 
-                            </p>
-                            <br><br>
-                            <p>Que puedes esperar de nosotros, donde se describe como
-                            porporcionamos y desarrollamos nuestros servicios. Lo 
-                            que esperamos de ti. Donde se establece ciertas reglas
-                            para utilizar nuestros servicios.
-                            </p>
-                            <br>
-                              <button type="submit" class="terminosacept"><a class="regreso" href="registro.html">Aceptar</a></button>
-                       </div>  
-                    </div>
-            </div>
+            <div class="aceptar">
+                <a href="#openModal"><input type="checkbox">&nbsp Acepto Terminos y Codiciones</a>
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<div class="modalArriba"><h2>Terminos y Condiciones</h2></div><br>
+		<div class="pe"><p>Estos Términos del Servicio reflejan la forma de trabajar de Google como empresa, las leyes por las que nos regimos y determinados aspectos que siempre hemos creído que son ciertos. Por ello, estos Términos del Servicio ayudan a definir la relación que tiene Google contigo cuando interactúas con nuestros servicios. Por ejemplo, estos términos incluyen las siguientes secciones:
+
+            <br><br> Qué puedes esperar de nosotros, donde se describe cómo proporcionamos y desarrollamos nuestros servicios. Lo que esperamos de ti, donde se establecen ciertas reglas para utilizar nuestros servicios.</p></div>
+            <br><a href="#close" title="Close" class="close"><button>Aceptar</button></a>
+
+	</div>
+</div>
+                </div>
+            
             <br><br>
-            <button>Ingresar</button>
+            <a href="login.html"><button>Ingresar</button></a>
+        </div>
         </div>
     </div>
    </div>
